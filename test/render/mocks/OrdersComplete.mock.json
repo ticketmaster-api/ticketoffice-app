@@ -1,0 +1,31 @@
+{
+   "confirmation":{
+      "id":"MOCK-946acd9d-4a20-4963-91c6-7ca4729ffcbc",
+      "type":"order-confirmations",
+      "relationships":{
+         "orders":{
+            "data":[
+               {
+                  "id":"34-28897/ATL",
+                  "type":"orders"
+               }
+            ]
+         }
+      }
+   },
+   "_embedded":{
+      "orders":{
+         "data":[
+            {
+               "id":"34-28897/ATL",
+               "type":"orders",
+               "metadata":{
+                  "type":"order-meta",
+                  "providerId":"host"
+               }
+            }
+         ]
+      }
+   },
+   "status":"200"
+}

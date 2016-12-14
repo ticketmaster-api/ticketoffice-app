@@ -1,0 +1,28 @@
+.eventPrices-list {
+  display: inline-block;
+}
+
+.eventPrice-list-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.eventPrice-price {
+  flex-grow: 3;
+}
+
+.eventPrice--button {
+  font-size: 1rem;
+  min-height: 0;
+  padding: 0 10px;
+  margin-left: 10px;
+}
+
+.eventPrice-list-item input {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.eventPrices-sorter select {
+  font-size: 1rem;
+}

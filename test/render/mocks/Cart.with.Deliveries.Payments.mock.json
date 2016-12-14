@@ -1,0 +1,293 @@
+{
+  "cart": {
+    "id": "202b34a9-7e10-4cb6-88aa-39ed90360cb1.jphx1",
+    "type": "carts",
+    "attributes": {
+      "reservations": [
+        {
+          "expiration": "2016-11-17T01:33:38.930Z",
+          "itemGroups": [
+            {
+              "type": "ticket-item-groups",
+              "metadata": {
+                "type": "tmss-ticket-item-group-meta",
+                "lineItem": "1"
+              },
+              "id": "1-000000000001",
+              "quantity": 2,
+              "currency": "USD",
+              "perItemPrice": "10.00",
+              "fees": [
+                {
+                  "label": "Distance Fee",
+                  "amount": "0.00",
+                  "type": "distance"
+                },
+                {
+                  "label": "Facility Fee",
+                  "amount": "0.00",
+                  "type": "facility"
+                },
+                {
+                  "label": "Service Fee",
+                  "amount": "1.50",
+                  "type": "service"
+                }
+              ],
+              "taxes": [
+                {
+                  "label": "Service",
+                  "amount": "0.00",
+                  "type": "service"
+                },
+                {
+                  "label": "Service",
+                  "amount": "0.00",
+                  "type": "service"
+                }
+              ],
+              "offer": "000000000001"
+            }
+          ],
+          "itemDetails": [
+            {
+              "type": "ticket-block-details",
+              "metadata": {
+                "type": "ticket-block-detail-meta",
+                "itemGroup": "1-000000000001"
+              },
+              "section": "GA301",
+              "ga": true
+            }
+          ],
+          "reservation": "1",
+          "product": "0B005164F959274E"
+        }
+      ],
+      "deliveries": [
+        {
+          "id": "3",
+          "type": "delivery",
+          "attributes": {
+            "totals": {
+              "currency": "USD",
+              "price": "0.00",
+              "fees": "0.00",
+              "taxes": "0.00",
+              "total": "0.00"
+            },
+            "reservations": [
+              "1"
+            ],
+            "deliveryType": "WILLCALL"
+          }
+        }
+      ],
+      "payments": [
+        {
+          "id": "1",
+          "paymentType": "credit-card-payments",
+          "amount": "28.20",
+          "currency": "USD"
+        }
+      ],
+      "fees": [
+        {
+          "label": "Processing Fee",
+          "amount": "5.20",
+          "type": "processing_fee"
+        }
+      ],
+      "taxes": [
+        {
+          "label": "Processing Tax",
+          "amount": "0.00",
+          "type": "processing_tax"
+        }
+      ],
+      "totals": {
+        "currency": "USD",
+        "price": "20.00",
+        "fees": "8.20",
+        "taxes": "0.00",
+        "deliveries": "0.00",
+        "upsells": "0.00",
+        "total": "28.20"
+      }
+    },
+    "relationships": {
+      "events": {
+        "data": [
+          {
+            "id": "vvG1iZfpKyp3qC",
+            "type": "events"
+          }
+        ]
+      },
+      "products": {
+        "data": [
+          {
+            "id": "0B005164F959274E",
+            "type": "products"
+          }
+        ]
+      },
+      "offers": {
+        "data": [
+          {
+            "id": "000000000001",
+            "type": "offers"
+          }
+        ]
+      }
+    },
+    "metadata": {
+      "type": "cart-meta",
+      "external-ids": [
+        {
+          "id": "15992fb6-743a-40f1-8f41-c83bfcb38cb9",
+          "provider": "host",
+          "cartOrigin": {
+            "cluster": "phx1",
+            "time": "2016-11-17T01:28:06.485Z"
+          }
+        }
+      ]
+    }
+  },
+  "_embedded": {
+    "events": {
+      "data": [
+        {
+          "id": "vvG1iZfpKyp3qC",
+          "type": "events",
+          "attributes": {
+            "name": "UCLA Bruins Men's Soccer"
+          },
+          "relationships": {
+            "products": {
+              "data": [
+                {
+                  "id": "0B005164F959274E",
+                  "type": "products"
+                }
+              ]
+            },
+            "offers": {
+              "data": [
+                {
+                  "id": "000000000001",
+                  "type": "offers"
+                }
+              ]
+            }
+          },
+          "metadata": {
+            "type": "event-meta",
+            "source": {
+              "id": "0B005164F959274E",
+              "name": "ticketmaster"
+            }
+          }
+        }
+      ]
+    },
+    "products": {
+      "data": [
+        {
+          "id": "0B005164F959274E",
+          "type": "products",
+          "attributes": {},
+          "relationships": {
+            "offers": {
+              "data": [
+                {
+                  "id": "000000000001",
+                  "type": "offers"
+                }
+              ]
+            },
+            "events": {
+              "data": [
+                {
+                  "id": "vvG1iZfpKyp3qC",
+                  "type": "events"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "offers": {
+      "data": [
+        {
+          "id": "000000000001",
+          "type": "offers",
+          "attributes": {
+            "name": "STANDARD TICKET ADULT",
+            "description": "STANDARD TICKET ADULT"
+          },
+          "relationships": {
+            "products": {
+              "data": [
+                {
+                  "id": "0B005164F959274E",
+                  "type": "products"
+                }
+              ]
+            },
+            "events": {
+              "data": [
+                {
+                  "id": "vvG1iZfpKyp3qC",
+                  "type": "events"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "payments": {
+      "data": [
+        {
+          "id": "1",
+          "type": "credit-card-payments",
+          "attributes": {
+            "cardType": "VISA",
+            "expirationMonth": "1",
+            "expirationYear": "2018",
+            "lastFour": "************1234"
+          }
+        }
+      ]
+    },
+    "deliveries": {
+      "data": [
+        {
+          "id": "3",
+          "type": "delivery-options",
+          "attributes": {
+            "displayRank": 11,
+            "description": {
+              "short": "Will Call",
+              "long": "Tickets held at Will Call can only be retrieved by the cardholder with original credit card of purchase and a valid photo ID with signature such as a state ID, driver's license or passport."
+            }
+          },
+          "relationships": {
+            "reservations": {
+              "data": [
+                {
+                  "id": "1",
+                  "type": "reservations"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "status": "200"
+}

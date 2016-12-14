@@ -1,0 +1,23 @@
+{
+  "bin": "411111",
+  "last4": "1111",
+  "token": "wallet-wallet-3e9827ae98994ab18801f290f55f09cc",
+  "validated": false,
+  "billing_address": {
+    "city": "Los Angeles",
+    "state": "CA",
+    "country": "US",
+    "email": "john.doe@ticketmaster.com",
+    "first_name": "John",
+    "last_name": "Doe",
+    "address_line1": "7060 Hollywood Blvd",
+    "postal_code": "90028",
+    "home_phone": "3233233232",
+    "work_phone": "3233233232",
+    "mobile_phone": "3233233232"
+  },
+  "funding_method": "visa",
+  "funding_source": "creditcard",
+  "expiration_month": 7,
+  "expiration_year": 20
+}

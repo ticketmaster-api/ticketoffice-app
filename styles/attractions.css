@@ -1,0 +1,15 @@
+.attractions {
+  display: inline-block;
+}
+
+.attractions ul, .attractions li {
+  display: inline;
+}
+
+.attractions li:after {
+  content: ", ";
+}
+
+.attractions li:last-child:after {
+  content: "";
+}

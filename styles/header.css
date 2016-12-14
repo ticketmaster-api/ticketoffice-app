@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
+}
+
+.header .header-block {
+  flex-grow: 1;
+  padding: 15px;
+}
+
+.header .header-block.navigation {
+  flex-grow: 10;
+}
+
+.header, .header .subnavigation-list, .header .searcher-result {
+  background: #009cde;
+}
+
+.header .event-header__tm-logo, .header .event-header__cart {
+  height: 35px;
+}
+
+.header .event-header__cart {
+  width: 24px;
+  padding: 5px 0;
+}

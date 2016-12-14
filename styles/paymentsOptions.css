@@ -1,0 +1,20 @@
+.paymentsOptions fieldset {
+  margin-top: 20px;
+}
+
+.paymentsOptions label {
+  display: inline-block;
+  min-width: 150px;
+}
+
+.paymentsOptions input {
+  font-size: inherit;
+}
+
+.paymentsOptions-button {
+  font-size: 1rem;
+  min-height: 0;
+  padding: 0 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+}

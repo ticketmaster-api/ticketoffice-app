@@ -1,0 +1,11 @@
+.venueDetails-state:before {
+  content: ", ";
+}
+
+.venueDetails-state:after {
+  content: " ";
+}
+
+.venueDetails .currentEvents {
+  margin-top: 20px;
+}

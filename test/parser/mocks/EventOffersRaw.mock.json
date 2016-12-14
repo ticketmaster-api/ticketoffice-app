@@ -1,0 +1,371 @@
+{
+  "limits": {
+    "max": 50
+  },
+  "prices": {
+    "data": [
+      {
+        "type": "offered-prices",
+        "attributes": {
+          "currency": "USD",
+          "value": "150.00"
+        },
+        "relationships": {
+          "offers": {
+            "data": [
+              {
+                "id": "000001020001",
+                "type": "offers"
+              }
+            ]
+          },
+          "priceZones": {
+            "data": [
+              {
+                "id": "2",
+                "type": "price-zones"
+              }
+            ]
+          },
+          "areas": {
+            "data": [
+              {
+                "id": "1",
+                "type": "areas"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "offered-prices",
+        "attributes": {
+          "currency": "USD",
+          "value": "429.00"
+        },
+        "relationships": {
+          "offers": {
+            "data": [
+              {
+                "id": "000000810002",
+                "type": "offers"
+              }
+            ]
+          },
+          "priceZones": {
+            "data": [
+              {
+                "id": "0",
+                "type": "price-zones"
+              }
+            ]
+          },
+          "areas": {
+            "data": [
+              {
+                "id": "3",
+                "type": "areas"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "eventMapping": {
+      "id": "G5dIZfaEwfAZd",
+      "type": "event",
+      "source": {
+        "name": "ticketmaster",
+        "id": "3A005099F2505003"
+      }
+    }
+  },
+  "offers": [
+    {
+      "id": "000001020001",
+      "type": "offers",
+      "attributes": {
+        "name": "GA",
+        "description": "GA at Taylor Swift Concert + GA F1 USGP Race",
+        "rank": 0,
+        "offerType": "SPECIAL",
+        "currency": "USD",
+        "prices": [
+          {
+            "priceZone": "2",
+            "value": "150.00",
+            "total": "162.51",
+            "fees": [
+              {
+                "value": "0.00",
+                "label": "Distance",
+                "type": "distance"
+              },
+              {
+                "value": "0.00",
+                "label": "Facility",
+                "type": "facility"
+              },
+              {
+                "value": "11.55",
+                "label": "Service",
+                "type": "service"
+              }
+            ],
+            "taxes": [
+              {
+                "value": "0.00",
+                "label": "Face Value Tax",
+                "type": "face_value_tax"
+              },
+              {
+                "value": "0.96",
+                "label": "Service Tax",
+                "type": "service_tax"
+              },
+              {
+                "value": "0.00",
+                "label": "Service Tax 2",
+                "type": "service_tax2"
+              }
+            ]
+          }
+        ],
+        "limit": {
+          "min": 1,
+          "max": 50,
+          "multiples": 1
+        }
+      },
+      "relationships": {
+        "areas": {
+          "data": [
+            {
+              "id": "1",
+              "type": "areas"
+            }
+          ]
+        },
+        "priceZones": {
+          "data": [
+            {
+              "id": "2",
+              "type": "price-zones"
+            }
+          ]
+        },
+        "products": {
+          "data": [
+            {
+              "id": "3A005099F2505003",
+              "type": "products"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "000000810002",
+      "type": "offers",
+      "attributes": {
+        "name": "GAPIT",
+        "description": "GA Pit at Taylor Swift Concert + GA F1 USGP Race",
+        "rank": 1,
+        "offerType": "SPECIAL",
+        "currency": "USD",
+        "prices": [
+          {
+            "priceZone": "0",
+            "value": "429.00",
+            "total": "448.17",
+            "fees": [
+              {
+                "value": "0.00",
+                "label": "Distance",
+                "type": "distance"
+              },
+              {
+                "value": "0.00",
+                "label": "Facility",
+                "type": "facility"
+              },
+              {
+                "value": "17.70",
+                "label": "Service",
+                "type": "service"
+              }
+            ],
+            "taxes": [
+              {
+                "value": "0.00",
+                "label": "Face Value Tax",
+                "type": "face_value_tax"
+              },
+              {
+                "value": "1.47",
+                "label": "Service Tax",
+                "type": "service_tax"
+              },
+              {
+                "value": "0.00",
+                "label": "Service Tax 2",
+                "type": "service_tax2"
+              }
+            ]
+          }
+        ],
+        "limit": {
+          "min": 1,
+          "max": 50,
+          "multiples": 1
+        }
+      },
+      "relationships": {
+        "areas": {
+          "data": [
+            {
+              "id": "3",
+              "type": "areas"
+            }
+          ]
+        },
+        "priceZones": {
+          "data": [
+            {
+              "id": "0",
+              "type": "price-zones"
+            }
+          ]
+        },
+        "products": {
+          "data": [
+            {
+              "id": "3A005099F2505003",
+              "type": "products"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "_embedded": {
+    "priceZones": {
+      "data": [
+        {
+          "id": "2",
+          "type": "price-zones",
+          "attributes": {
+            "currency": "USD",
+            "name": "Price Level 2"
+          },
+          "relationships": {
+            "offers": {
+              "data": [
+                {
+                  "id": "000001020001",
+                  "type": "offers"
+                }
+              ]
+            },
+            "areas": {
+              "data": [
+                {
+                  "id": "1",
+                  "type": "areas"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "0",
+          "type": "price-zones",
+          "attributes": {
+            "currency": "USD",
+            "name": "Price Level 1"
+          },
+          "relationships": {
+            "offers": {
+              "data": [
+                {
+                  "id": "000000810002",
+                  "type": "offers"
+                }
+              ]
+            },
+            "areas": {
+              "data": [
+                {
+                  "id": "3",
+                  "type": "areas"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "areas": {
+      "data": [
+        {
+          "id": "1",
+          "type": "areas",
+          "attributes": {
+            "rank": 0,
+            "name": "GENADM",
+            "areaType": "AREA"
+          },
+          "relationships": {
+            "areas": {},
+            "offers": {
+              "data": [
+                {
+                  "id": "000001020001",
+                  "type": "offers"
+                }
+              ]
+            },
+            "priceZones": {
+              "data": [
+                {
+                  "id": "2",
+                  "type": "price-zones"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "3",
+          "type": "areas",
+          "attributes": {
+            "rank": 1,
+            "name": "GAPIT",
+            "areaType": "AREA"
+          },
+          "relationships": {
+            "areas": {},
+            "offers": {
+              "data": [
+                {
+                  "id": "000000810002",
+                  "type": "offers"
+                }
+              ]
+            },
+            "priceZones": {
+              "data": [
+                {
+                  "id": "0",
+                  "type": "price-zones"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

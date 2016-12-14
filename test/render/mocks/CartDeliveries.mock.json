@@ -1,0 +1,245 @@
+{
+  "deliveries": [
+    {
+      "id": "d3d9446802a44259755d38e6d163e820",
+      "type": "delivery",
+      "attributes": {
+        "deliveryType": "WILLCALL",
+        "displayRank": "9",
+        "totals": {
+          "fee": "0.00",
+          "tax": "0.00",
+          "grand": "0.00",
+          "currency": "USD"
+        },
+        "description": {
+          "long": "Tickets held at Will Call can only be retrieved by the cardholder with original credit card of purchase and a valid photo ID with signature such as a government issued  ID, driver's license or passport.",
+          "short": "Canadian Will Call"
+        },
+        "restrictions": [
+          {
+            "type": "product-restriction",
+            "id": "0B0050FA2511661A"
+          },
+          {
+            "type": "product-offer-restriction",
+            "id": "0B0050FA2511661A",
+            "offers": [
+              "000000000001"
+            ]
+          }
+        ]
+      },
+      "relationships": {
+        "deliveryOptions": {
+          "data": [
+            {
+              "id": "delivery-option-1",
+              "type": "deliveryOptions"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "c81e728d9d4c2f636f067f89cc14862c",
+      "type": "delivery",
+      "attributes": {
+        "deliveryType": "WILLCALL",
+        "displayRank": "11",
+        "totals": {
+          "fee": "0.00",
+          "tax": "0.00",
+          "grand": "0.00",
+          "currency": "USD"
+        },
+        "description": {
+          "long": "Tickets held at Will Call can only be retrieved by the cardholder with original credit card of purchase and a valid photo ID with signature such as a state ID, driver's license or passport.",
+          "short": "Will Call"
+        },
+        "restrictions": [
+          {
+            "type": "product-restriction",
+            "id": "0B0050FA2511661A"
+          },
+          {
+            "type": "product-offer-restriction",
+            "id": "0B0050FA2511661A",
+            "offers": [
+              "000000000001"
+            ]
+          }
+        ]
+      },
+      "relationships": {
+        "deliveryOptions": {
+          "data": [
+            {
+              "id": "delivery-option-2",
+              "type": "deliveryOptions"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "e7ef6789bda02c52bf2812cd17c47eb9",
+      "type": "delivery",
+      "attributes": {
+        "deliveryType": "WILLCALL",
+        "displayRank": "11",
+        "totals": {
+          "fee": "2.50",
+          "tax": "0.00",
+          "grand": "2.50",
+          "currency": "USD"
+        },
+        "description": {
+          "long": "For International Orders Only - Tickets held at Will Call can only be retrieved by the cardholder with original credit card of purchase and a valid photo ID with signature such as a government issued ID, driver's license or passport.",
+          "short": "International Will Call"
+        },
+        "restrictions": [
+          {
+            "type": "product-restriction",
+            "id": "0B0050FA2511661A"
+          },
+          {
+            "type": "product-offer-restriction",
+            "id": "0B0050FA2511661A",
+            "offers": [
+              "000000000001"
+            ]
+          }
+        ]
+      },
+      "relationships": {
+        "deliveryOptions": {
+          "data": [
+            {
+              "id": "delivery-option-3",
+              "type": "deliveryOptions"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "_embedded": {
+    "deliveryOptions": [
+      {
+        "id": "delivery-option-1",
+        "type": "deliveryOption",
+        "attributes": {
+          "requiresAddress": false,
+          "requiresIdentification": false,
+          "acceptedCountries": [
+            {
+              "id": "1",
+              "type": "accepted-delivery-country",
+              "attributes": {
+                "country": "CA"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "delivery-option-2",
+        "type": "deliveryOption",
+        "attributes": {
+          "requiresAddress": false,
+          "requiresIdentification": false,
+          "acceptedCountries": [
+            {
+              "id": "1",
+              "type": "accepted-delivery-country",
+              "attributes": {
+                "country": "US"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "delivery-option-3",
+        "type": "deliveryOption",
+        "attributes": {
+          "requiresAddress": false,
+          "requiresIdentification": false,
+          "excludedCountries": [
+            {
+              "id": "1",
+              "type": "accepted-delivery-country",
+              "attributes": {
+                "country": "BL"
+              }
+            },
+            {
+              "id": "2",
+              "type": "accepted-delivery-country",
+              "attributes": {
+                "country": "BQ"
+              }
+            },
+            {
+              "id": "3",
+              "type": "accepted-delivery-country",
+              "attributes": {
+                "country": "CG"
+              }
+            },
+            {
+              "id": "4",
+              "type": "accepted-delivery-country",
+              "attributes": {
+                "country": "CW"
+              }
+            },
+            {
+              "id": "5",
+              "type": "accepted-delivery-country",
+              "attributes": {
+                "country": "MF"
+              }
+            },
+            {
+              "id": "6",
+              "type": "accepted-delivery-country",
+              "attributes": {
+                "country": "SS"
+              }
+            },
+            {
+              "id": "7",
+              "type": "accepted-delivery-country",
+              "attributes": {
+                "country": "SX"
+              }
+            },
+            {
+              "id": "8",
+              "type": "accepted-delivery-country",
+              "attributes": {
+                "country": "US"
+              }
+            },
+            {
+              "id": "9",
+              "type": "accepted-delivery-country",
+              "attributes": {
+                "country": "CA"
+              }
+            },
+            {
+              "id": "10",
+              "type": "accepted-delivery-country",
+              "attributes": {
+                "country": "ND"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

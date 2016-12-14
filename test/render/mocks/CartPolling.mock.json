@@ -1,0 +1,26 @@
+{
+   "cart":{
+      "id":"fcf1c1b6-2d87-41f3-8e57-537801a7dae6.jash1",
+      "type":"carts",
+      "attributes":{
+
+      },
+      "relationships":{
+
+      },
+      "metadata":{
+         "type":"cart-meta",
+         "external-ids":[
+            {
+               "id":"4b0e2aa3-27dd-4b72-ae4b-7a5d9d2de532",
+               "provider":"host"
+            }
+         ]
+      }
+   },
+   "_embedded":{
+
+   },
+   "status":"206",
+   "polling":true
+}

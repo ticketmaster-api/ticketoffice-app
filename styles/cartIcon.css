@@ -1,0 +1,39 @@
+.cartIcon {
+  position: relative;
+  width: 65px;
+}
+.cartIcon.header-block {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.cartIcon__cartedQty {
+  position: absolute;
+  width: 3em;
+  bottom: 20px;
+  right: 5px;
+  border-radius: 3em;
+  background: #fff;
+  color: #009cde;
+  padding: .8em 0;
+  font-size: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cartIcon .tooltip {
+  position: absolute;
+  top: 60%;
+  left: -125px;
+  display: none;
+  width: 300px;
+  z-index: 998;
+}
+
+.cartIcon:hover .tooltip {
+  display: block;
+}
+
+.cartIcon .tooltip__content {
+  font-size: .7rem;
+}

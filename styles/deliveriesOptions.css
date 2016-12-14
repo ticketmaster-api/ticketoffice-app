@@ -1,0 +1,28 @@
+.deliveriesOptions-item {
+  position: relative;
+}
+
+.deliveriesOptions-item .tooltip {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  display: none;
+  width: 300px;
+  z-index: 998;
+}
+
+.deliveriesOptions-item:hover .tooltip {
+  display: block;
+}
+
+.deliveriesOptions-item .tooltip__content {
+  font-size: .7rem;
+}
+
+.deliveriesOptions-button {
+  font-size: 1rem;
+  min-height: 0;
+  padding: 0 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+}

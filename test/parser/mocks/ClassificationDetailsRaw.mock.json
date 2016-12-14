@@ -1,0 +1,42 @@
+{
+  "_links":{
+    "self":{
+      "href":"/discovery/v2/classifications/KZFzniwnSyZfZ7v7na?locale=en-us"
+    }
+  },
+  "segment":{
+    "id":"KZFzniwnSyZfZ7v7na",
+    "name":"Arts & Theatre",
+    "_links":{
+      "self":{
+        "href":"/discovery/v2/classifications/segments/KZFzniwnSyZfZ7v7na?locale=en-us"
+      }
+    },
+    "_embedded":{
+      "genres":[
+        {
+          "id":"KnvZfZ7vAe1",
+          "name":"Comedy",
+          "_links":{
+            "self":{
+              "href":"/discovery/v2/classifications/genres/KnvZfZ7vAe1?locale=en-us"
+            }
+          },
+          "_embedded":{
+            "subgenres":[
+              {
+                "id":"KZazBEonSMnZfZ7vF17",
+                "name":"Other Comedies",
+                "_links":{
+                  "self":{
+                    "href":"/discovery/v2/classifications/subgenres/KZazBEonSMnZfZ7vF17?locale=en-us"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.loginLink, .loginLink:hover,
+.logoutLink, .logoutLink:hover {
+  color: #ffffff;
+  line-height: 35px;
+  cursor: pointer;
+}

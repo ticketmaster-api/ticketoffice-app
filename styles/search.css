@@ -1,0 +1,71 @@
+.search {
+	position: relative;
+}
+
+.searcher {
+	background: #ffffff;
+	border-radius: 30px;
+	border: 2px solid #dfe4e7;
+	display: flex;
+	padding-left: 15px;
+	flex-direction: row;
+}
+
+.searcher > * {
+	padding: 0 5px;
+}
+
+.searcher select {
+	height: 40px;
+	background: #ffffff;
+	border: none;
+	font-size: inherit;
+	flex-grow: 1;
+	-webkit-appearance: textfield;
+	cursor: pointer;
+}
+
+.searcher input {
+	font-size: inherit;
+	border: none;
+	flex-grow: 2;
+}
+
+.searcher button {
+	font-size: inherit;
+	flex-grow: 1;
+}
+
+.searcher-result {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	z-index: 998;
+	width: 400px;
+	max-height: 650px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	border-radius: 3px;
+	padding: 15px;
+}
+
+.searcher-result a {
+	color: #ffffff;
+}
+
+.searcher-result::-webkit-scrollbar {
+	width: 12px;
+}
+
+.searcher-result::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: rgba(255,255,255,0.8);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.searcher-result::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}

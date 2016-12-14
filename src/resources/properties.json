@@ -1,0 +1,49 @@
+{
+  "default": {
+    "appRoot": "http://localhost:3002",
+    "api": {
+      "key": "my-consumer-key",
+      "secret": "my-consumer-secret"
+    },
+    "url": {
+      "healthcheck": "/healthcheck",
+      "cart": {
+        "create": {
+          "proxy": "/cart/createCart"
+        },
+        "update": {
+          "proxy": "/cart/updateCart"
+        },
+        "completeOrder": {
+          "proxy": "/cart/completeOrder"
+        },
+        "empty": {
+          "proxy": "/cart/empty"
+        },
+        "selectDeliveries": {
+          "proxy": "/cart/selectDeliveries"
+        },
+        "selectPayments": {
+          "proxy": "/cart/selectPayments"
+        },
+        "cartPollingCallback": "/cart/cartPollingCallback",
+        "completeOrderPollingCallback": "/cart/completeOrderPollingCallback"
+      },
+      "oauth": {
+        "authorizeBaseUrl": "https://oauth.ticketmaster.com/oauth/authorize",
+        "callback": "/oauth/callback"
+      }
+    },
+    "cookies": {
+      "secret": "master of tickets"
+    },
+    "mockpurchase": false
+  },
+  "development": {
+    "appRoot": "http://127.0.0.1:3002",
+    "mockpurchase": true
+  },
+  "production": {
+    "appRoot": "http://my-domain/store"
+  }
+}

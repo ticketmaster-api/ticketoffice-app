@@ -1,0 +1,25 @@
+.presale-list-item {
+  position: relative;
+}
+
+.presale-list-item .presale-date {
+  font-size: .8rem;
+}
+
+.presale-list-item .tooltip {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  display: none;
+  max-width: 300px;
+  z-index: 998;
+}
+
+.presale-list-item:hover .tooltip {
+  display: block;
+}
+
+.presale-list-item .tooltip__content {
+  font-size: .7rem;
+}

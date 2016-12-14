@@ -1,0 +1,15 @@
+.attractionDetails-classifications-list {
+  margin-bottom: 20px;
+}
+
+.attractionDetails-classifications {
+  display: inline-block;
+  background: #009cde;
+  color: #fff;
+  border-radius: 15px;
+  padding: 0 10px;
+}
+
+.attractionDetails-classifications + .attractionDetails-classifications {
+  margin-left: 5px;
+}

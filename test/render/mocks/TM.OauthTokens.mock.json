@@ -1,0 +1,7 @@
+{
+  "access_token": "ACCESS_TOKEN",
+  "expiration": "2016-11-21T19:28:10.885Z",
+  "expires_in": "3600",
+  "refresh_token": "FRESH_TOKEN",
+  "token_type": "bearer"
+}
