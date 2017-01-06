@@ -3,6 +3,7 @@ import { browserHistory } from 'react-router';
 import _ from 'lodash';
 import Reservations from './Reservations';
 import CartTotal from './CartTotal';
+import CountDownClock from './CountDownClock';
 import getCartId from '../util/cart';
 
 const CART_CLASSNAME = 'cartPage';
@@ -37,6 +38,12 @@ class Cart extends Component {
     }
   }
 
+  isExpired(expiration) {
+    const now = new Date();
+    const expirationDate = new Date(expiration);
+    return (now > expirationDate);
+  }
+
   render() {
     // Cart can be in one of the following condition:
     // 1. cart never created (no cart.id or session.cartId)
@@ -46,12 +53,12 @@ class Cart extends Component {
 
     const { cart } = this.props;
     const cartId = getCartId(this.props);
-    const emptyCart = (
+    const emptyCartComponent = (
       <div className={CART_CLASSNAME}>
         <h1 className="emptyMsg">Empty cart, please add tickets.</h1>
       </div>
     );
-    let cartContent = emptyCart;
+    let cartContent = emptyCartComponent;
 
     if (cart && cart.polling) {
       cartContent = (
@@ -64,9 +71,24 @@ class Cart extends Component {
       if (cartData && cartData.attributes && _embedded) {
         const { reservations, totals } = cartData.attributes;
         const { events, offers } = _embedded;
+        let countDownClock = null;
+        const expiration = _.get(reservations, '[0].expiration', null);
+
+        if (expiration) {
+          if (this.isExpired(expiration)) {
+            this.emptyCartHandler();
+          } else {
+            countDownClock = (
+              <CountDownClock
+                expiration={expiration}
+                emptyCartHandler={this.emptyCartHandler} />);
+          }
+        }
+
         if (reservations && reservations.length) {
           cartContent = (
             <div className={CART_CLASSNAME}>
+              {countDownClock}
               <h1>Shopping Cart</h1>
               <h2>Reservations</h2>
               <Reservations

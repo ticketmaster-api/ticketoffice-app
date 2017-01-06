@@ -1,0 +1,11 @@
+.countDownClock {
+  background: #009cde;
+  display: inline-block;
+  padding: 1em;
+  border-radius: 9em;
+  float: right;
+}
+
+.countDownClock .timer__indicator {
+  text-shadow: 1px 1px #555555;
+}
