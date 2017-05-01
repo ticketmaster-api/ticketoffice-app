@@ -32,7 +32,12 @@ class CurrentsEventItem extends Component {
   render() {
     const { currentEvent } = this.props;
     const firstVenue = _.get(currentEvent, '_embedded.venues[0]', null);
-    const showDate = getFormattedEventDate(new Date(currentEvent.dates.start.dateTime));
+    //OPIT-63: fix empty dates 
+    const showDate = currentEvent.dates.start.dateTime ?
+      getFormattedEventDate(new Date(currentEvent.dates.start.dateTime))
+      : (currentEvent.dates.start.localDate ?
+      getFormattedEventDate(new Date(currentEvent.dates.start.localDate))
+      : {month:"not",date:"set",day:"yet"});
 
     let venueComponent = null;
     if (firstVenue) {
